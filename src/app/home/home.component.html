@@ -1,0 +1,73 @@
+<div class="row">
+  <!-- <mat-drawer-container class="example-container">
+    <mat-drawer #drawer> -->
+  <div class="col-sm-2 col-1">
+    <div class="nav-header">
+      <div class="logo">
+        <mat-icon class="logo__icon">people</mat-icon>
+        <span>Meeting Organiser</span>
+      </div>
+    </div>
+    <div class="nav-menu">
+      <ul class="nav-menu__list">
+        <li>
+          <a routerLink="dashboard" class="list-item">
+            <mat-icon>home</mat-icon>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a class="list-item" routerLink="user">
+            <mat-icon>supervised_user_circle</mat-icon>
+            <span>User Manage</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="meeting" class="list-item">
+            <mat-icon>personal_video</mat-icon>
+            <span>Meeting Manage </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- </mat-drawer>
+  </mat-drawer-container> -->
+  <div class="col-sm-10 col-2">
+    <div class="header">
+      <mat-card class="row-1">
+        <mat-toolbar>
+          <button
+            mat-icon-button
+            class="example-icon"
+            aria-label="Example icon-button with menu icon"
+          >
+            <!-- (click)="drawer.toggle()" -->
+            <mat-icon>menu</mat-icon>
+          </button>
+
+          <span class="example-spacer"></span>
+          <button
+            mat-icon-button
+            class="example-icon favorite-icon"
+            aria-label="Example icon-button with heart icon"
+          >
+            <mat-icon>notifications</mat-icon>
+          </button>
+          <button
+            mat-icon-button
+            class="example-icon"
+            aria-label="Example icon-button with share icon"
+            routerLink="profile"
+          >
+            <!-- <span class="user-name">John</span> -->
+            <mat-icon (click)="openprofile()"> person_pin</mat-icon>
+          </button>
+        </mat-toolbar>
+      </mat-card>
+    </div>
+    <div class="row-2">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.row {
+  margin: 0;
+  padding: 0;
+  // display: flex;
+  // justify-content: center;
+  .person-basicdetails {
+    padding: 0;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #777;
+    width: 30%;
+    border-radius: 0 0 8px 8px;
+
+    .profile {
+      p {
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+      }
+      span {
+        font-size: 18px;
+        color: #fff;
+      }
+      .profile-image {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100%;
+        background-color: aquamarine;
+      }
+    }
+    .details {
+      background-color: azure;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      border-radius: 0 0 8px 8px;
+    }
+  }
+}
